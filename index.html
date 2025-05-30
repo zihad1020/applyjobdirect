@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
     }
 
     body {
@@ -57,17 +58,32 @@
       margin-bottom: 60px;
     }
 
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .job-card {
       background: white;
       border-radius: 16px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
       margin-bottom: 40px;
       overflow: hidden;
-      transition: transform 0.3s ease;
+      transform: translateY(0);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
     }
 
     .job-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 32px rgba(37, 99, 235, 0.25);
     }
 
     .job-image {
@@ -100,6 +116,30 @@
       border-radius: 30px;
       text-decoration: none;
       font-weight: 600;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .apply-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #38bdf8, #2563eb);
+      transition: all 0.4s ease;
+      z-index: 0;
+    }
+
+    .apply-btn:hover::before {
+      left: 0;
+    }
+
+    .apply-btn span {
+      position: relative;
+      z-index: 1;
     }
 
     footer {
@@ -128,7 +168,7 @@
           <div class="job-description">
             Deliver mail and packages in your local area for USPS. No experience required. Training and uniform provided.
           </div>
-          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn">Apply Now</a>
+          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn"><span>Apply Now</span></a>
         </div>
       </div>
 
@@ -139,7 +179,7 @@
           <div class="job-description">
             Assist customers at the counter with mailing, stamps, and package inquiries. Competitive pay and flexible hours.
           </div>
-          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn">Apply Now</a>
+          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn"><span>Apply Now</span></a>
         </div>
       </div>
 
@@ -150,7 +190,7 @@
           <div class="job-description">
             Work at USPS sorting facilities to load/unload and sort parcels. Full/part-time shifts available. Great for active individuals.
           </div>
-          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn">Apply Now</a>
+          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn"><span>Apply Now</span></a>
         </div>
       </div>
 
@@ -161,7 +201,7 @@
           <div class="job-description">
             Enter mail tracking info and customer records from home. No prior experience needed. Fast typing skills required.
           </div>
-          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn">Apply Now</a>
+          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn"><span>Apply Now</span></a>
         </div>
       </div>
 
