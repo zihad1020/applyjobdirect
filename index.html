@@ -1,99 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>USPS Remote Jobs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USPS Official Job Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
+
     body {
-      background-image: url('https://images.unsplash.com/photo-1581091012184-4c4f50b5d4d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      color: #fff;
+      background: #f1f5f9;
+      color: #1e293b;
+      line-height: 1.6;
     }
-    .overlay {
-      background-color: rgba(0, 0, 50, 0.7);
-      min-height: 100vh;
-      padding: 30px 20px;
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
+
+    header img {
+      height: 50px;
+    }
+
+    header a {
+      background: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     .container {
-      max-width: 700px;
-      margin: 0 auto;
-      background: #ffffffcc;
-      padding: 30px;
-      border-radius: 15px;
-      color: #333;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
       text-align: center;
     }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #003366;
+
+    .job-section {
+      margin-bottom: 60px;
     }
-    ul {
-      list-style: none;
-      text-align: left;
-      margin-top: 20px;
+
+    .job-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
     }
-    ul li {
-      margin-bottom: 15px;
-      font-size: 18px;
+
+    .job-card:hover {
+      transform: translateY(-5px);
     }
-    ul li i {
-      color: green;
-      margin-right: 10px;
+
+    .job-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
     }
-    .button {
+
+    .job-content {
+      padding: 24px;
+    }
+
+    .job-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .job-description {
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: #475569;
+    }
+
+    .apply-btn {
       display: inline-block;
-      margin-top: 25px;
-      padding: 15px 25px;
-      background-color: #0033cc;
-      color: #fff;
-      font-size: 18px;
-      border-radius: 8px;
+      background: linear-gradient(to right, #0ea5e9, #2563eb);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      font-weight: 600;
     }
-    .button:hover {
-      background-color: #001a66;
-    }
-    .footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #666;
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #64748b;
+      margin-top: 60px;
+      padding-bottom: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <div class="container">
-      <h1>📬 USPS Work From Home Jobs</h1>
-      <p><strong>Now Hiring Nationwide – Remote Positions Available</strong></p>
-      <ul>
-        <li><i class="fas fa-check-circle"></i>No Experience Required</li>
-        <li><i class="fas fa-check-circle"></i>Weekly Pay + Full Benefits</li>
-        <li><i class="fas fa-check-circle"></i>Flexible Work Hours</li>
-        <li><i class="fas fa-check-circle"></i>Nationwide Work from Home Opportunities</li>
-        <li><i class="fas fa-check-circle"></i>Bonuses & Overtime Available</li>
-        <li><i class="fas fa-check-circle"></i>Training Provided</li>
-        <li><i class="fas fa-check-circle"></i>Immediate Start Dates</li>
-      </ul>
-      <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="button">Apply Now</a>
-      <div class="footer">
-        *This site is not affiliated with the official United States Postal Service. <br/>
-        &copy; 2025 All rights reserved.
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/USPS_logo.svg/1200px-USPS_logo.svg.png" alt="USPS Logo">
+    <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain">Apply Now</a>
+  </header>
+
+  <div class="container">
+    <h1>📮 Official USPS Career Opportunities</h1>
+    <div class="job-section">
+
+      <div class="job-card">
+        <img src="https://www.usps.com/careers/images/rcas.jpg" alt="Mail Carrier" class="job-image">
+        <div class="job-content">
+          <div class="job-title">🚶 USPS Mail Carrier</div>
+          <div class="job-description">
+            Deliver mail and packages in your local area for USPS. No experience required. Training and uniform provided.
+          </div>
+          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn">Apply Now</a>
+        </div>
       </div>
+
+      <div class="job-card">
+        <img src="https://www.usps.com/careers/images/pse.jpg" alt="Postal Clerk" class="job-image">
+        <div class="job-content">
+          <div class="job-title">🧾 USPS Postal Clerk</div>
+          <div class="job-description">
+            Assist customers at the counter with mailing, stamps, and package inquiries. Competitive pay and flexible hours.
+          </div>
+          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <img src="https://www.usps.com/careers/images/handler.jpg" alt="Package Handler" class="job-image">
+        <div class="job-content">
+          <div class="job-title">📦 USPS Package Handler</div>
+          <div class="job-description">
+            Work at USPS sorting facilities to load/unload and sort parcels. Full/part-time shifts available. Great for active individuals.
+          </div>
+          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <img src="https://www.usps.com/careers/images/dataentry.jpg" alt="Remote Data Entry" class="job-image">
+        <div class="job-content">
+          <div class="job-title">💻 USPS Remote Data Entry</div>
+          <div class="job-description">
+            Enter mail tracking info and customer records from home. No prior experience needed. Fast typing skills required.
+          </div>
+          <a href="https://www.aplfb8trk.com/NKMBHD2/B9WWNX6/?sub1=Newdomain" class="apply-btn">Apply Now</a>
+        </div>
+      </div>
+
     </div>
+    <footer>
+      This promotional site is not officially affiliated with the United States Postal Service. <br />
+      &copy; 2025 All rights reserved.
+    </footer>
   </div>
 </body>
 </html>
